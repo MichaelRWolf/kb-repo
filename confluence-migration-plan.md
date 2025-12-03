@@ -48,22 +48,26 @@
 ### Per-Space Migration Steps
 
 1. **Export HTML** - Export Confluence space as HTML (always flat — hierarchy in `index.html` only)
-2. **Upload to Drive** - Upload export folder to Google Drive
-3. **Convert to Docs** - Enable conversion and verify all pages converted
+2. **Upload to Drive** - Upload export folder to Google Drive with conversion enabled
+   - Create destination folder in Drive
+   - Enable "Convert uploaded files to Google Docs format"
+   - Upload the export folder
+   - Wait for conversion to complete
+3. **Verify Conversion** - Confirm all pages converted to Google Docs
 4. **Optional: Reconstruct Hierarchy** - Parse `index.html` to rebuild tree structure (see [hierarchy-reconstruction.md](hierarchy-reconstruction.md))
 
 ### Spaces Migration Grid
 
-| Space Key | Space Name               | Export HTML | Upload to Drive | Convert to Docs | Notes                | Export Date | Drive Folder           |
-|:----------|:-------------------------|:-----------:|:---------------:|:---------------:|:---------------------|:-----------:|:-----------------------|
-| LIV       | Living                   | ✅          | ⚪              | ⚪              | First test migration | 2024-12-03  | Confluence-Living/LIV/ |
-| BLOOM     | ALIGN                    | ⚪          | ⚪              | ⚪              |                      |             |                        |
-| FIN       | Finances                 | ⚪          | ⚪              | ⚪              |                      |             |                        |
-| IC        | Impact Circle            | ⚪          | ⚪              | ⚪              |                      |             |                        |
-| LnD       | Learning & Develoopment  | ⚪          | ⚪              | ⚪              |                      |             |                        |
-| MOM       | Mom                      | ⚪          | ⚪              | ⚪              |                      |             |                        |
-| WE        | Wolf Enterprises         | ⚪          | ⚪              | ⚪              |                      |             |                        |
-|           | Michael's Personal Space | ⚪          | ⚪              | ⚪              |                      |             |                        |
+| Space Key | Space Name               | Export HTML | Upload to Drive | Verify Conversion | Notes                | Export Date | Drive Folder           |
+|:----------|:-------------------------|:-----------:|:---------------:|:-----------------:|:---------------------|:-----------:|:-----------------------|
+| LIV       | Living                   | ✅          | ⚪              | ⚪                | First test migration | 2024-12-03  | Confluence-Living/LIV/ |
+| BLOOM     | ALIGN                    | ⚪          | ⚪              | ⚪                |                      |             |                        |
+| FIN       | Finances                 | ⚪          | ⚪              | ⚪                |                      |             |                        |
+| IC        | Impact Circle            | ⚪          | ⚪              | ⚪                |                      |             |                        |
+| LnD       | Learning & Develoopment  | ⚪          | ⚪              | ⚪                |                      |             |                        |
+| MOM       | Mom                      | ⚪          | ⚪              | ⚪                |                      |             |                        |
+| WE        | Wolf Enterprises         | ⚪          | ⚪              | ⚪                |                      |             |                        |
+|           | Michael's Personal Space | ⚪          | ⚪              | ⚪                |                      |             |                        |
 
 ### SPACES to Consolidate
 

@@ -6,18 +6,17 @@ Short, practical checklist for the migration run.
 
 - [ ] Confirm Confluence space(s) to migrate.
 - [ ] Ensure you have permission to export each space.
-- [ ] Decide folder strategy in Drive:
-  - [ ] Preserve export folders **or**
-  - [ ] Flatten to a single folder per space.
 - [ ] Create a target folder in Google Drive for each space.
+- [ ] Decide folder strategy (default: flat, or reconstruct hierarchy later).
 
 ## During Migration
 
-- [ ] Export each Confluence space as **HTML**.
+- [ ] Export each Confluence space as **HTML** (always flat — hierarchy in `index.html` only).
 - [ ] Verify export directories contain one `*.html` per page.
+- [ ] Enable "Convert uploaded files to Google Docs format" in Drive settings.
 - [ ] Upload export folder(s) into the appropriate Drive folder.
-- [ ] Confirm "Convert uploads to Google Docs format" is enabled.
 - [ ] Wait until all docs are converted.
+- [ ] Verify conversion: confirm all HTML pages converted to Google Docs.
 
 ## After Migration (Immediate Sanity Checks)
 

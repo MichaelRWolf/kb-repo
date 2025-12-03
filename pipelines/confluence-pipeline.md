@@ -28,22 +28,30 @@ space-key-export/
 In Google Drive:
 
 1. Create a folder named after the space, e.g. `SpaceName`.
-2. Upload the entire export folder.
-3. Enable “Convert uploaded files to Google Docs format”.
+2. Enable "Convert uploaded files to Google Docs format" (in Drive settings).
+3. Upload the entire export folder to the destination folder.
+4. Wait for conversion to complete (Drive converts `.html` files to Google Docs automatically).
 
 Result:
 
 - Each `*.html` page becomes a **Google Doc**.
 - Filenames are derived from page titles (from the HTML `<title>` tag).
+- All pages are in a flat structure (default).
 
 No merging, splitting, or renaming decisions needed here.
 
-## Step 3 — Choose Folder Strategy (Once)
+## Step 3 — Verify Conversion
+
+- Confirm all HTML pages have been converted to Google Docs.
+- Spot-check a few documents to ensure content is readable.
+- Verify the number of Google Docs matches the number of pages.
+
+## Step 4 — Optional: Choose Folder Strategy
 
 Since the export is flat, you have two options:
 
 1. **Keep flat structure** (default)
-   - Upload the flat export as-is to `/SpaceName/`
+   - Already done in Step 2
    - All pages in one folder, search-first approach
 
 2. **Reconstruct hierarchy** (optional, see [hierarchy-reconstruction.md](../hierarchy-reconstruction.md))
@@ -53,7 +61,7 @@ Since the export is flat, you have two options:
 
 This is a bulk operation; no per-page thinking.
 
-## Step 4 — Optional Post-Processing (Later, Not Required Today)
+## Step 5 — Optional Post-Processing (Later, Not Required Today)
 
 After migration, we *may*:
 
