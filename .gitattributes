@@ -1,0 +1,7 @@
+# Track zip files with Git LFS
+*.zip filter=lfs diff=lfs merge=lfs -text
+# Track other potentially large binary files
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
