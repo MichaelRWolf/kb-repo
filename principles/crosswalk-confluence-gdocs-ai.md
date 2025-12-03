@@ -28,8 +28,8 @@ This table summarizes how the core organizational concepts map across:
 
 ## How Other Principle Docs Relate
 
-- `hierarchy-vs-search.md` zooms in on navigation metaphors.
-- `wiki-vs-docs.md` compares Confluence-style wiki usage vs Google Docs.
-- `atomic-notes.md` clarifies how we think about note granularity.
-- `naming-conventions.md` explains how titles support both search and future AI.
-- `folder-structure-guidelines.md` offers practical advice for Drive structure.
+- [hierarchy-vs-search.md](principles/hierarchy-vs-search.md) zooms in on navigation metaphors.
+- [wiki-vs-docs.md](principles/wiki-vs-docs.md) compares Confluence-style wiki usage vs Google Docs.
+- [atomic-notes.md](principles/atomic-notes.md) clarifies how we think about note granularity.
+- [naming-conventions.md](principles/naming-conventions.md) explains how titles support both search and future AI.
+- [folder-structure-guidelines.md](principles/folder-structure-guidelines.md) offers practical advice for Drive structure.

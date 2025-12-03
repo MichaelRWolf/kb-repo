@@ -7,6 +7,7 @@ Modern knowledge systems (Notion, Roam, Obsidian, Zettelkasten-style workflows) 
 > **Atomic notes** — small, self-contained units of meaning.
 
 An atomic note is:
+
 - about one idea, one process, or one decision
 - small enough to understand quickly
 - large enough to be meaningful on its own
@@ -17,6 +18,7 @@ An atomic note is:
 - Google Docs tends toward **larger, topic-sized docs** (sometimes too big).
 
 Atomic notes are a **middle ground**:
+
 - smaller than a big document/manual
 - larger than a single bullet or one-line thought
 
@@ -28,7 +30,8 @@ For first-pass migration:
 - We accept one-doc-per-page as a mechanical starting point.
 
 Later, if needed, we can:
-- split large docs into atomic notes (see `gdocs-atomic-chunking-pipeline.md`)
+
+- split large docs into atomic notes (see [gdocs-atomic-chunking-pipeline.md](pipelines/gdocs-atomic-chunking-pipeline.md))
 - merge trivial docs that obviously belong together
 
 The key is: migration stays mechanical, refinement is optional and incremental.

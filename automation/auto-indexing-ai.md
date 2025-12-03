@@ -13,7 +13,7 @@ Allow AI tools to:
 ## Basic Steps
 
 1. **Chunk the corpus** into pieces:
-   - entire docs or smaller sections (see `auto-chunking-algorithm.md`).
+   - entire docs or smaller sections (see [auto-chunking-algorithm.md](automation/auto-chunking-algorithm.md)).
 2. **Embed** each chunk:
    - use a sentence/paragraph-level embedding model.
 3. Store:

@@ -18,6 +18,7 @@ Google Docs expects:
 - **search** as the primary way to find content
 
 Users are not expected to click down deep trees. Instead, they:
+
 - type a few words in Drive search
 - rely on good document titles and recent items
 

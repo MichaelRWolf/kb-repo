@@ -2,8 +2,7 @@
 
 Knowledge base reorganization project.
 
-This repo captures our approach for migrating from Confluence (and later Evernote / Dropbox)
-into a Google Drive / Google Docs–centric workspace, in a way that:
+This repo captures our approach for migrating from Confluence (and later Evernote / Dropbox) into a Google Drive / Google Docs–centric workspace, in a way that:
 
 - is **mechanical** and repeatable (no human "normalization" passes)
 - avoids fragile, bespoke scripts and UI fuckery

@@ -53,8 +53,8 @@ After migration, we *may*:
 
 These are described in more detail in:
 
-- `pipelines/gdocs-atomic-chunking-pipeline.md`
-- `automation/auto-chunking-algorithm.md`
-- `automation/auto-indexing-ai.md`
+- [gdocs-atomic-chunking-pipeline.md](pipelines/gdocs-atomic-chunking-pipeline.md)
+- [auto-chunking-algorithm.md](automation/auto-chunking-algorithm.md)
+- [auto-indexing-ai.md](automation/auto-indexing-ai.md)
 
 They are **optional** and not part of the minimum viable migration.

@@ -33,5 +33,6 @@ Each folder contains **topic-sized docs**, not more folders, unless there is a v
 For initial Confluence migration, we may keep the export’s folder structure mechanically.
 
 Over time, we can:
+
 - move docs into a simpler `/Knowledge/...` layout
 - do so gradually, without blocking the migration itself

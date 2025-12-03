@@ -20,9 +20,10 @@ Google Docs excels at:
 - being part of a broader Drive ecosystem (sharing, permissions, etc.)
 
 But it is **not** a wiki:
+
 - no page tree built into Docs itself
 - no native backlinks
-- no global “wiki page” concept
+- no global "wiki page" concept
 
 ## How We Adapt
 
