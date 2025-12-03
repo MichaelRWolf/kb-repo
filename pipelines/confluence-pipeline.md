@@ -7,6 +7,8 @@ This is the **mechanical, no-brainpower** pipeline.
 From Confluence:
 
 - Export the entire space as **HTML** (not PDF, not single Word).
+- **Important:** Confluence HTML export is **always flat** — no nested folders.
+- Hierarchy exists only in `index.html`, not in the filesystem structure.
 - Result: a directory like:
 
 ```text
@@ -14,9 +16,11 @@ space-key-export/
     index.html
     page-1.html
     page-2.html
-    subfolder/
-        page-3.html
-        ...
+    page-3.html
+    attachments/
+    images/
+    styles/
+    ...
 ```
 
 ## Step 2 — Upload Export Folder to Google Drive
@@ -36,10 +40,16 @@ No merging, splitting, or renaming decisions needed here.
 
 ## Step 3 — Choose Folder Strategy (Once)
 
-Pick **one** of:
+Since the export is flat, you have two options:
 
-1. **Preserve nested folders** from the export as-is.
-2. **Flatten into one folder** (`/SpaceName/`) after conversion.
+1. **Keep flat structure** (default)
+   - Upload the flat export as-is to `/SpaceName/`
+   - All pages in one folder, search-first approach
+
+2. **Reconstruct hierarchy** (optional, see [hierarchy-reconstruction.md](../hierarchy-reconstruction.md))
+   - Parse `index.html` to rebuild the original Confluence tree
+   - Upload reconstructed hierarchy to Drive
+   - Can maintain both flat and hierarchical views in parallel
 
 This is a bulk operation; no per-page thinking.
 

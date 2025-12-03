@@ -24,24 +24,28 @@ Automated post-processing for chunking / AI-indexing
 
 - **HTML export** gives:
   - one file per page
-  - folder structure that mirrors the space
+  - **flat structure** (no nested folders — hierarchy exists only in `index.html`)
   - titles embedded in `<title>` tags
 - **Drive auto-conversion** turns each HTML file into a native Google Doc.
 - This provides a **mechanical 1:1 mapping** with no human decisions.
+- Hierarchy can be reconstructed from `index.html` if needed (see [hierarchy-reconstruction.md](../hierarchy-reconstruction.md))
 
 ## Options for Folder Structure
 
-Two mechanical options, chosen once per migration:
+Since the export is flat, you have two options:
 
-1. **Preserve Confluence-like tree**  
-   - Keep the export’s nested folders when uploading to Drive.  
-   - Pros: familiar to Confluence users.  
-   - Cons: deep trees can still be brittle; search will eventually dominate.
+1. **Keep flat structure** (default)
+   - Upload the flat export as-is to `/SpaceName/`
+   - Pros: simple, search-first, no nesting headaches
+   - Cons: loses the sense of hierarchy as a navigation aid
 
-2. **Flatten to a single folder**  
-   - Upload everything into `/SpaceName/`.  
-   - Pros: simple, search-first, no nesting headaches.  
-   - Cons: loses the sense of hierarchy as a navigation aid.
+2. **Reconstruct hierarchy** (optional)
+   - Parse `index.html` to rebuild the original Confluence tree
+   - Upload reconstructed hierarchy to Drive
+   - Can maintain both flat and hierarchical views in parallel
+   - See [hierarchy-reconstruction.md](../hierarchy-reconstruction.md) for details
+   - Pros: familiar to Confluence users, preserves navigation structure
+   - Cons: requires additional processing step
 
 We do **not** hand-edit structure during migration.
 Human reorganization can happen later, selectively, if needed.

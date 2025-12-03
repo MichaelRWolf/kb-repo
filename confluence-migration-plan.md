@@ -47,9 +47,10 @@
 
 ### Per-Space Migration Steps
 
-1. **Export HTML** - Export Confluence space as HTML
+1. **Export HTML** - Export Confluence space as HTML (always flat — hierarchy in `index.html` only)
 2. **Upload to Drive** - Upload export folder to Google Drive
 3. **Convert to Docs** - Enable conversion and verify all pages converted
+4. **Optional: Reconstruct Hierarchy** - Parse `index.html` to rebuild tree structure (see [hierarchy-reconstruction.md](hierarchy-reconstruction.md))
 
 ### Spaces Migration Grid
 
