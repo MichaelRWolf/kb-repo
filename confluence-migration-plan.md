@@ -64,6 +64,18 @@
 | WE        | Wolf Enterprises         | ⚪          | ⚪              | ⚪              |                      |             |                        |
 |           | Michael's Personal Space | ⚪          | ⚪              | ⚪              |                      |             |                        |
 
+### SPACES to Consolidate
+
+Spaces found but not yet in migration grid (evaluate for consolidation or separate migration):
+
+- **BLOOM Projects** - Consider consolidating with BLOOM
+- **Coaching**
+- **Fidelity Investment & Eliassen Group**
+- **Hillrom**
+- **Radtac**
+- **Software Engineer Program**
+- **Soul Leadership**
+
 ---
 
 ## Phase 3: Post-Migration Tasks
