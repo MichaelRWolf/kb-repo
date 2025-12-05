@@ -41,8 +41,9 @@ Since the export is flat, you have two options:
 
 2. **Reconstruct hierarchy** (optional)
    - Parse `index.html` to rebuild the original Confluence tree
-   - Upload reconstructed hierarchy to Drive
-   - Can maintain both flat and hierarchical views in parallel
+   - Upload reconstructed hierarchy to Drive as `<Space Key> (hierarchical)/`
+   - Default folder `<Space Key>/` remains flat (no qualifier needed)
+   - Can maintain both default (flat) and hierarchical views in parallel
    - See [hierarchy-reconstruction.md](../hierarchy-reconstruction.md) for details
    - Pros: familiar to Confluence users, preserves navigation structure
    - Cons: requires additional processing step

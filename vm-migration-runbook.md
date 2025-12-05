@@ -19,9 +19,9 @@ This runbook assumes **flat export as the default and only** structure Confluenc
 - **Confluence site:** `wolfenterprises.atlassian.net`
 - **Spaces:** e.g., `LIV`, `BLOOM`, `ALIGN`, etc.
 - **Google Drive root for migrated content:**  
-  `Confluence-Living/`
+  `Confluence-wolfenterprises/`
 - **Per-space target folders:**  
-  `Confluence-Living/LIV/`, `Confluence-Living/BLOOM/`, etc.
+  `<Space Key>/` (e.g., `LIV/`, `LnD/`, `MOM/`)
 - **VM name:** `confluence-migrator` (Google Cloud)
 
 Goal: perform *all* large downloads/uploads on the VM.  
@@ -93,7 +93,7 @@ sudo passwd $USER
 
 In Google Drive:
 
-1. Create folder: `Confluence-Living`
+1. Create folder: `Confluence-wolfenterprises`
 2. Right-click → **Share**
 3. Add Wendy → **Editor**
 4. Click the share settings gear:
@@ -102,13 +102,13 @@ In Google Drive:
 
 ### 3.2 Create per-space placeholders
 
-Inside `Confluence-Living`:
+Inside `Confluence-wolfenterprises`:
 
 ```text
-Confluence-Living/
+Confluence-wolfenterprises/
   LIV/
-  BLOOM/
-  ALIGN/
+  LnD/
+  MOM/
   ...
 ```
 
@@ -163,7 +163,7 @@ This is expected and correct.
 ### 5.1 Prepare destination folder
 
 1. In VM browser → **drive.google.com**
-2. Go to `Confluence-Living/LIV/`  
+2. Go to `Confluence-wolfenterprises/LIV/`  
    (create if needed)
 
 ### 5.2 Ensure Google Drive converts uploads
@@ -174,7 +174,7 @@ Gear icon → Settings:
 
 ### 5.3 Upload the unzipped folder
 
-1. Inside `Confluence-Living/LIV/`  
+1. Inside `Confluence-wolfenterprises/LIV/`  
 2. Click **New → Folder upload**  
 3. Select the **LIV/** folder from `~/Downloads`  
 4. Confirm
@@ -188,15 +188,13 @@ Drive will:
 
 ---
 
-## 6. Optional: Flat View Folder with Shortcuts
+## 6. Optional: Hierarchical View Folder
 
-If you want one folder showing only the Docs:
+If you reconstruct hierarchy (optional, see [hierarchy-reconstruction.md](../hierarchy-reconstruction.md)):
 
-1. Create: `Confluence-Living/LIV (flat)`
-2. Open original `LIV` folder
-3. Use search (auto-scoped) → `type:document`
-4. Select all results → Right-click → **Add shortcut to Drive**
-5. Target = `LIV (flat)`
+1. Create: `Confluence-wolfenterprises/LIV (hierarchical)`
+2. Upload reconstructed hierarchy to this folder
+3. The default `LIV/` folder remains flat (no qualifier needed)
 
 Nothing moves. Everything is non-destructive.
 
