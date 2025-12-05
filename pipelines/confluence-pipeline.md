@@ -1,8 +1,12 @@
 # Confluence → Google Docs Pipeline (Mechanical)
 
-This is the **mechanical, no-brainpower** pipeline.
+This is the **mechanical, no-brainpower** pipeline for migrating each Confluence space.
 
-## Step 1 — Export Confluence Space as HTML
+**Note:** One-time setup (Google VM) is documented in [vm-migration-runbook.md](../vm-migration-runbook.md).
+
+## Per-Space Migration Steps
+
+### Step 1 — Export Confluence Space as HTML
 
 From Confluence:
 
@@ -23,7 +27,7 @@ space-key-export/
     ...
 ```
 
-## Step 2 — Upload Export Folder to Google Drive
+### Step 2 — Upload Export Folder to Google Drive
 
 In Google Drive:
 
@@ -40,28 +44,28 @@ Result:
 
 No merging, splitting, or renaming decisions needed here.
 
-## Step 3 — Verify Conversion
+### Step 3 — Verify Conversion
 
 - Confirm all HTML pages have been converted to Google Docs.
 - Spot-check a few documents to ensure content is readable.
 - Verify the number of Google Docs matches the number of pages.
 
-## Step 4 — Optional: Choose Folder Strategy
+### Step 4 — Optional: Reconstruct Hierarchy
 
-Since the export is flat, you have two options:
+Since the export is flat, you can optionally reconstruct the original Confluence hierarchy:
 
-1. **Keep flat structure** (default)
-   - Already done in Step 2
-   - All pages in one folder, search-first approach
+- Parse `index.html` to rebuild the original Confluence tree
+- Upload reconstructed hierarchy to Drive
+- Can maintain both flat and hierarchical views in parallel
+- See [hierarchy-reconstruction.md](../hierarchy-reconstruction.md) for detailed instructions
 
-2. **Reconstruct hierarchy** (optional, see [hierarchy-reconstruction.md](../hierarchy-reconstruction.md))
-   - Parse `index.html` to rebuild the original Confluence tree
-   - Upload reconstructed hierarchy to Drive
-   - Can maintain both flat and hierarchical views in parallel
+**Default:** Keep flat structure (already done in Step 2). All pages in one folder, search-first approach.
 
 This is a bulk operation; no per-page thinking.
 
-## Step 5 — Optional Post-Processing (Later, Not Required Today)
+---
+
+## Optional: Post-Processing (Later, Not Required Today)
 
 After migration, we *may*:
 
