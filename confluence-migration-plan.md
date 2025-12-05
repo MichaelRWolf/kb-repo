@@ -82,16 +82,54 @@
 
 ### Spaces Migration Grid
 
-| Space Key | Space Name               | Export HTML | Upload to Drive | Verify Conversion | Merged to | Notes                |
-|:----------|:-------------------------|:------------|:----------------|:------------------|:----------|:---------------------|
-| LIV       | Living                   | DONE        | ____            | ____              | N/A       | First test migration |
-| BLOOM     | ALIGN                    | ____        | ____            | ____              | N/A       |                      |
-| FIN       | Finances                 | ____        | ____            | ____              | N/A       |                      |
-| IC        | Impact Circle            | ____        | ____            | ____              | N/A       |                      |
-| LnD       | Learning & Develoopment  | ____        | ____            | ____              | N/A       |                      |
-| MOM       | Mom                      | ____        | ____            | ____              | N/A       |                      |
-| WE        | Wolf Enterprises         | ____        | ____            | ____              | N/A       |                      |
-|           | Michael's Personal Space | ____        | ____            | ____              | N/A       |                      |
+Confluence Export URLs
+
+| Space Key                | Space Name                           | Confluence Export URL                                                      | Status |
+|--------------------------|--------------------------------------|----------------------------------------------------------------------------|--------|
+| LIV                      | Living                               | https://wolfenterprises.atlassian.net/wiki/spaces/LIV/settings/export      | Done   |
+| ALIGN                    | BLOOM                                | https://wolfenterprises.atlassian.net/wiki/spaces/ALIGN/settings/export    | Done   |
+| FIN                      | Finances                             | https://wolfenterprises.atlassian.net/wiki/spaces/FIN/settings/export      | 232356 |
+| IC                       | Impact Circle                        | https://wolfenterprises.atlassian.net/wiki/spaces/IC/settings/export       | WIP    |
+| LnD                      | Learning & Develoopment              | https://wolfenterprises.atlassian.net/wiki/spaces/LnD/settings/export      |        |
+| MOM                      | Mom                                  | https://wolfenterprises.atlassian.net/wiki/spaces/MOM/settings/export      |        |
+| WE                       | Wolf Enterprises                     | https://wolfenterprises.atlassian.net/wiki/spaces/WE/settings/export       |        |
+|--------------------------|--------------------------------------|----------------------------------------------------------------------------|--------|
+| Michael's Personal Space | ____                                 | ____                                                                       |        |
+|--------------------------|--------------------------------------|----------------------------------------------------------------------------|--------|
+| Projects                 | BLOOM Projects                       | https://wolfenterprises.atlassian.net/wiki/spaces/Projects/settings/export |        |
+| COAC                     | Coaching                             | https://wolfenterprises.atlassian.net/wiki/spaces/COAC/settings/export     |        |
+| FIEG                     | Fidelity Investment & Eliassen Group | https://wolfenterprises.atlassian.net/wiki/spaces/FIEG/settings/export     |        |
+| HR                       | Hillrom                              | https://wolfenterprises.atlassian.net/wiki/spaces/HR/settings/export       |        |
+| RAD                      | Radtac                               | https://wolfenterprises.atlassian.net/wiki/spaces/RAD/settings/export      |        |
+| SEP                      | Software Engineer Program            | https://wolfenterprises.atlassian.net/wiki/spaces/SEP/settings/export      |        |
+| DLC                      | Soul Leadership                      | https://wolfenterprises.atlassian.net/wiki/spaces/DLC/settings/export      |        |
+|--------------------------|--------------------------------------|----------------------------------------------------------------------------|--------|
+
+Google Drive Imported URLs
+
+| Space Key                | Space Name                           | Google Drive URL                                                         |
+|--------------------------|--------------------------------------|--------------------------------------------------------------------------|
+| LIV                      | Living                               | https://drive.google.com/drive/folders/1mqqPMoQee0mCwGiis9FQl5CpGaKZEuLH |
+| ALIGN                    | BLOOM                                | https://drive.google.com/drive/folders/1z8V-hVyvt9zTqrLauRgFd9B_W2CSVxqR |
+| FIN                      | Finances                             | https://drive.google.com/drive/folders/1ftip4KjBndhD1NksKfCT8xp7vSYF_99A |
+| IC                       | Impact Circle                        |                                                                          |
+| LnD                      | Learning & Develoopment              |                                                                          |
+| MOM                      | Mom                                  |                                                                          |
+| WE                       | Wolf Enterprises                     |                                                                          |
+|--------------------------|--------------------------------------|--------------------------------------------------------------------------|
+| Michael's Personal Space | ____                                 |                                                                          |
+|--------------------------|--------------------------------------|--------------------------------------------------------------------------|
+| Projects                 | BLOOM Projects                       |                                                                          |
+| COAC                     | Coaching                             |                                                                          |
+| FIEG                     | Fidelity Investment & Eliassen Group |                                                                          |
+| HR                       | Hillrom                              |                                                                          |
+| RAD                      | Radtac                               |                                                                          |
+| SEP                      | Software Engineer Program            |                                                                          |
+| DLC                      | Soul Leadership                      |                                                                          |
+|--------------------------|--------------------------------------|--------------------------------------------------------------------------|
+On
+
+
 
 ### SPACES to Consolidate
 

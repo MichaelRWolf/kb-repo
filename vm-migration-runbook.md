@@ -2,7 +2,15 @@
 
 Confluence → Google Drive/Docs via Cloud VM (Flat Export Default)
 
+**⚠️ WARNING - This approach was abandoned due to excessive complexity and time waste (7+ hours). See [migration_notes.md](../migration_notes.md) for details. Consider exporting directly from local machine with high-speed connection instead.**
+
 This runbook documents a **mechanical, repeatable** workflow for migrating Confluence Cloud spaces to Google Drive, using a Google Cloud VM to avoid slow or unreliable local upload bandwidth.
+
+**Known Issues:**
+- Confluence Cloud export can get stuck with "Already running this task" error
+- No way to reset stuck exports without Atlassian support
+- Remote desktop + browser + cloud services = multiple failure points
+- Cloud complexity adds significant overhead vs. local export
 
 **Important correction:**  
 Confluence **HTML export is always FLAT**.  
