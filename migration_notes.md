@@ -1,10 +1,16 @@
 # Migration Notes
 
+2025-12-05T17:00:00-05:00
+
 ## VM Approach Abandoned - 2025-12-05
 
 **Decision:** Abandoning Google Cloud VM approach. Easier to drive to a high-speed internet location than deal with cloud fuckery.
 
-**Time wasted:** 7 hours on VM setup, troubleshooting, and fighting with Confluence Cloud export bugs.
+**Cleanup:**
+- Deleted all (1) VM instances
+- Deleted all (1) Machine Instances
+- Might have spent $0.25
+- Definitely wasted 8 hours
 
 **Key Learning:**
 - **Cloud is nebulous. Don't go there lightly.**
@@ -16,6 +22,8 @@
 **New approach:** Export directly from local machine with high-speed connection (either at home or drive to location with better bandwidth).
 
 ---
+
+2025-12-05T16:30:00-05:00
 
 ## Troubleshooting: Stuck Confluence Export ("Already running this task")
 
@@ -122,7 +130,7 @@ sudo passwd $USER
 ```
 
 ---
-2025-12-05T14:03:57-05:00
+st2025-12-05T14:03:57-05:00
 
 Instance created - https://console.cloud.google.com/compute/instancesDetail/zones/us-central1-c/instances/instance-20251205-183322?project=oval-inquiry-412222
 ---
